@@ -1,0 +1,23 @@
+/* Write your CSS here */
+.event-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  color: white;
+}
+.event-image {
+  width: 250px;
+  height: 150px;
+}
+.event-heading {
+  font-size: 22px;
+}
+.event-para {
+  font-size: 14px;
+}
+.event-image-button {
+  background-color: transparent;
+  border: 0px none transparent;
+}

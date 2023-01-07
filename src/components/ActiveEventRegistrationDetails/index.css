@@ -1,0 +1,70 @@
+/* Write your CSS here */
+.event-registration-details-container {
+  width: 50vw;
+  padding: 20px;
+}
+.register-image {
+  height: 300px;
+  width: 300px;
+}
+.yet-to-register-container {
+  width: 380px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.register-para {
+  text-align: center;
+  font-family: 'roboto';
+  color: #64748b;
+}
+.register-here-button {
+  height: 35px;
+  width: 280px;
+
+  border: 0px none transparent;
+  border-radius: 5px;
+  background-color: #0967d2;
+  color: white;
+}
+.closed-registrations-container {
+  width: 380px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.registrations-closed-image {
+  height: 300px;
+  width: 300px;
+}
+.closed-heading {
+  text-align: center;
+  font-size: 22px;
+}
+.closed-para {
+  text-align: center;
+  font-family: 'roboto';
+  color: #64748b;
+  width: 220px;
+}
+.registered-image {
+  height: 100px;
+}
+.already-registerd-container {
+  width: 500px;
+  text-align: center;
+}
+.intial-container {
+  width: 300px;
+  text-align: center;
+  font-size: 22px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}

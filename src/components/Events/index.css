@@ -1,0 +1,30 @@
+/* Write your CSS here */
+.events-bg-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.events-container {
+  background-color: #3a4b63;
+
+  width: 40vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh;
+}
+.un-ordered-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+.event-main-heading {
+  color: white;
+  margin-left: 60px;
+}
