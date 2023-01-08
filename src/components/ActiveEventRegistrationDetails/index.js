@@ -20,7 +20,7 @@ export default class ActiveEventRegistrationDetails extends Component {
           src="https://assets.ccbp.in/frontend/react-js/events-register-img.png"
         />
         <p className="register-para">
-          A live performance brings so much to your realtionship with dance.
+          A live performance brings so much to your relationship with dance.
           Seeing dance live can often make you fall totally in love with this
           beautiful art form
         </p>

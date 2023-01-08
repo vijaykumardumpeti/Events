@@ -3,17 +3,14 @@ import './index.css'
 
 export default class EventItem extends Component {
   render() {
-    const {eventItem, key} = this.props
-    const {
-      imageUrl,
-      name,
-      location,
-      registrationStatus,
-      onclickEvent,
-    } = eventItem
+    const {eventItem, key, onclickEvent, isClicked} = this.props
+    const {id, imageUrl, name, location, registrationStatus} = eventItem
+
+    const styling = isClicked ? 'border-styling' : ''
+    console.log(isClicked)
 
     this.imageClicked = () => {
-      onclickEvent(registrationStatus)
+      onclickEvent(registrationStatus, id)
     }
 
     return (
@@ -23,9 +20,13 @@ export default class EventItem extends Component {
           className="event-image-button"
           type="button"
         >
-          <img className="event-image" alt="event" src={imageUrl} />
+          <img
+            className={`event-image ${styling}`}
+            alt="event"
+            src={imageUrl}
+          />
         </button>
-        <h1 className="event-heading">{name}</h1>
+        <p className="event-heading">{name}</p>
         <p className="event-para">{location}</p>
       </li>
     )

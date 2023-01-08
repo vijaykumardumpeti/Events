@@ -64,9 +64,13 @@ const statusesObject = {
 export default class Events extends Component {
   state = {
     status: 'INITIAL',
+    idOfItem: '',
   }
 
-  onclickEvent = registrationStatus => {
+  onclickEvent = (registrationStatus, id) => {
+    this.setState({
+      idOfItem: id,
+    })
     if (registrationStatus === statusesObject.yetToRegister) {
       this.setState({
         status: statusesObject.yetToRegister,
@@ -85,7 +89,7 @@ export default class Events extends Component {
   }
 
   render() {
-    const {status} = this.state
+    const {status, idOfItem} = this.state
 
     return (
       <div className="events-bg-container">
@@ -97,6 +101,7 @@ export default class Events extends Component {
                 onclickEvent={this.onclickEvent}
                 eventItem={eventItem}
                 key={eventItem.id}
+                isClicked={eventItem.id === idOfItem}
               />
             ))}
           </ul>
